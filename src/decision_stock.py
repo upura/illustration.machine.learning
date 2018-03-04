@@ -17,7 +17,7 @@ if __name__ == "__main__":
     eu = np.cumsum(y[xi[::-1]])
     e = eu[(N-1):0:-1] - el[0:(N-1)]
     ei = int(np.max(np.abs(e)))
-    c = np.mean(xs[ei])
+    c = xs[ei]
     
     if d == 0:
         X0 = np.linspace(-3, 3, N)
